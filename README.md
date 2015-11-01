@@ -1,2 +1,2 @@
 # design-patterns
-A C++ implementation of design pattern.
+A C++ implementation of design patterns.
