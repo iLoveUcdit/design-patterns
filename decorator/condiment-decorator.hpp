@@ -12,6 +12,7 @@ public:
         if (m_beverage != NULL) {
             delete m_beverage;
         }
+        m_beverage = NULL;
     }
 protected:
     Beverage *m_beverage;
