@@ -20,7 +20,7 @@ int main() {
     model->performFly();
     model->setFlyBehavior(new FlyRocketPowered());
     // TODO
-    // The new instance of FlyRocketPowered will free in model.
+    // The new instance of FlyRocketPowered will free by model.
     model->performFly();
 
     delete model;

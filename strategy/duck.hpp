@@ -16,9 +16,11 @@ public:
         if (m_flyBehavior != NULL) {
             delete m_flyBehavior;
         }
+        m_flyBehavior = NULL;
         if (m_quackBehavior != NULL) {
             delete m_quackBehavior;
         }
+        m_quackBehavior = NULL;
     }
     void setFlyBehavior(FlyBehavior *fb) {
         if (m_flyBehavior != NULL) {
