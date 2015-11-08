@@ -2,7 +2,7 @@ CC = g++
 CFLAGS = -Wall -g -O0
 
 PROGRAM = demo
-HPP_FILES = $(wildcard *.hpp)
+HPP_FILES = $(wildcard *.hpp ingredient/*.hpp)
 OBJS = $(patsubst %.hpp, %.o, $(HPP_FILES))
 
 all: $(PROGRAM)
@@ -17,8 +17,8 @@ clean:
 	rm -f demo $(OBJS)
 
 format:
-	astyle *.cpp *.hpp
-	rm -f *.orig
+	astyle *.h *.hpp ingredient/*.hpp
+	rm -f *.orig ingredient/*.orig
 
 check: $(PROGRAM)
 	valgrind --leak-check=yes ./$(PROGRAM)

@@ -20,4 +20,7 @@ format:
 	astyle *.cpp *.hpp
 	rm -f *.orig
 
-.PHONY: clean format
+check: $(PROGRAM)
+	valgrind --leak-check=yes ./$(PROGRAM)
+
+.PHONY: clean format check
