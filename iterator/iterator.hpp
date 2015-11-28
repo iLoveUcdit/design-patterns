@@ -37,7 +37,6 @@ public:
 private:
     std::list<MenuItem*>* m_items;
     std::list<MenuItem*>::iterator m_position;
-
 };
 
 class PancakeHouseMenuIterator : public Iterator {
